@@ -1,0 +1,110 @@
+
+#include <stdio.h>
+#include<conio.h>
+
+#define TRUE 1
+
+#define FALSE 0
+
+int main()
+
+{
+
+	int i,j,k;
+
+	int n,a[10][10],in[10],visit[10];
+
+	int e,u,v;
+
+	int count=0;
+
+	printf("Enter the No of Vertices\n");
+
+	scanf("%d",&n);
+
+	printf("Enter the No of Edges\n");
+
+	scanf("%d",&e);
+
+	for(i=1;i<=n;i++)
+
+	{
+
+		for(j=1;j<=n;j++)
+
+		{
+
+			a[i][j]=0;
+
+		}
+
+	}
+
+	printf("Enter the Edges\n");
+
+	for(i=1;i<=e;i++)
+
+	{
+
+		scanf("%d%d",&u,&v);
+
+		a[u][v]=1;
+
+	}
+
+	for(i=1;i<=n;i++)
+
+	{
+
+		in[i]=0;
+
+		visit[i]=FALSE;
+
+	}
+
+
+	for(i=1;i<=n;i++)
+
+		for(j=1;j<=n;j++)
+
+			in[i]=in[i]+a[j][i];
+
+	printf("\n\nThe topological order is:");
+
+	while(count<n)
+
+	{
+
+		for(k=1;k<=n;k++)
+
+		{
+
+			if((in[k]==0) && (visit[k]==0))
+
+			{
+
+				printf(" %d",k);
+
+				visit[k]=TRUE; 
+
+				for(i=1;i<=n;i++)
+
+				{
+
+					if(a[k][i]==1)
+
+						in[i]=in[i]-1;
+
+				}
+
+			}
+
+		}
+
+		count++;
+
+	}
+
+	return 0;
+	getch();
+}

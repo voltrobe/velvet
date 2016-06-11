@@ -1,0 +1,35 @@
+function loadContent() { 
+$('#content').load(toLoad,'',showNewContent) 
+} 
+function showNewContent() { 
+$.getScript("external.js");
+$('#content').show('normal',hideLoader()); 
+}
+
+
+
+
+
+fb comment box
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+the visual area
+
+<div class="fb-comments" data-href="http://socialnova.in" data-width="500" data-numposts="5" data-colorscheme="light"></div>
+
+
+
+
+
+scriplet
+
+<object type="text/x-scriptlet" width=100% height="250" data="data.htm">
+</object>

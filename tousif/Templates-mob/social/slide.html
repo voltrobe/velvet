@@ -1,0 +1,302 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <link rel="stylesheet" media="all" href="style.css" type="text/css">
+<style>
+body{
+overflow-x:hidden;
+background:#999;
+}
+
+#pane{
+position:fixed;
+width:250px;
+z-index:11;
+background:white;
+/*display:none;*/
+-webkit-box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.5), 0px 1px 4px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
+		-moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.8) inset;
+		box-shadow: 20px 20px 20px -15px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.3) inset;
+/*
+background: -webkit-radial-gradient(center center, circle cover, rgba(255,255,255,0.2), rgba(0,0,0,0.2));
+background: -moz-radial-gradient(center center, circle cover,  rgba(255,255,255,0.2), rgba(0,0,0,0.2));
+*/
+  background: -webkit-linear-gradient(#ddd, #999);
+    background: -moz-linear-gradient(#eee, #ddd);
+    background: -ms-linear-gradient(#eee, #ddd);
+    background: -o-linear-gradient(#eee, #ddd);
+    background: linear-gradient(#eee, #ddd);
+}
+
+#site{
+position:absolute;
+z-index:15;
+background:lightblue;
+height:auto;
+top:0px;
+-webkit-box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.5), 0px 1px 4px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
+		-moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.8) inset;
+		box-shadow: 20px 20px 20px -15px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.3) inset;
+	-webkit-box-shadow: 10px;
+}
+#slidebtn{
+position:fixed;
+ width:80px;
+ height:25px;
+top:50%;
+border:groove;
+background:#666;
+color:white;
+margin-left:-20px;
+-webkit-transform: rotate(270deg);
+-moz-transform: rotate(270deg);
+border-radius: inherit;
+box-shadow: 
+        0 0 0 .05em rgba(100,100,100,0.075),
+        0 0 0 .25em rgba(0,0,0,0.1),
+        inset 0 .1em .05em rgba(0,0,0,0.1),
+        0 .05em rgba(255,255,255,0.7);
+}
+#slidebtn:hover{
+/*-webkit-transform: rotate(0deg);*/
+-webkit-animation: mask 3s infinite alternate,
+ opa 1.25s ease-in-out infinite alternate;
+ -moz-animation: mask 3s infinite alternate,
+ opa 1.25s ease-in-out infinite alternate;
+ width:100px;
+ height:50px;
+}
+@-webkit-keyframes mask {
+    25%  { -webkit-transform: rotate(360deg); }
+    50%  { -webkit-transform: rotate( 90deg); }
+    75%  { -webkit-transform: rotate(180deg); }
+    100% { -webkit-transform: rotate(270deg); }
+}
+@-webkit-keyframes opa {
+    25.0% { opacity: 0.80; }
+    50.0% { opacity: 0.85; }
+    75.0% { opacity: 0.95; }
+    100.0% { opacity: 0.99; }
+}
+@-moz-keyframes mask {
+    25%  { -moz-transform: rotate(360deg); }
+    50%  { -moz-transform: rotate( 90deg); }
+    75%  { -moz-transform: rotate(180deg); }
+    100% { -moz-transform: rotate(270deg); }
+}
+@-moz-keyframes opa {
+    25.0% { opacity: 0.80; }
+    50.0% { opacity: 0.85; }
+    75.0% { opacity: 0.95; }
+    100.0% { opacity: 0.99; }
+}
+#fld1{
+/* display:none; */
+position:relative;
+width:30%;
+background:blue;
+}
+.fld1{
+width:30%;
+background:blue;
+}
+#fld2{
+
+postion:absolute;
+width:70%;
+}
+img {
+	border-radius:20%;
+	border: .12em solid rgba(255,255,255,0.3);
+	-webkit-transform:rotate(15deg);
+	-moz-transform:rotate(15deg);
+	zoom:150%;
+	-webkit-box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.5), 0px 1px 4px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
+		-moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.8) inset;
+		box-shadow: 20px 20px 20px -15px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.3) inset;
+}
+#fixedtool{
+-webkit-box-shadow: 10px 15px 10px -10px rgba(0, 0, 0, 0.5), 0px 1px 4px rgba(0, 0, 0, 0.3), 0 10 60px rgba(0, 0, 0, 0.1) inset;
+		-moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.8) inset;
+		box-shadow: 20px 20px 20px -15px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.3) inset;
+background:green;
+position:fixed;
+width:100%;
+
+}
+</style>
+
+<head>
+<body>
+
+<script src='js/jquery.min.js'></script>
+<div id='pane'>
+<script type='text/javascript'>
+var ht= $(document).height()-20;
+document.write("<fieldset style='height:"+ht+";overflow-y:scroll;'>");
+</script>
+<!-- Scroll pane hack-->
+<div align='center' ><font style='color:black;'>Site Map</font>
+<fieldset id="linklists">
+<br/><br/>
+<fieldset id="profile"><img src="images/administrator.png"/>Profile page</fieldset>
+<fieldset id="activities"><img src="images/administrator_woman3.png"/>Activities</fieldset>
+<fieldset id="chat"><img src="images/chat.png"/>chat</fieldset>
+<fieldset id="friend"><img src="images/user_glasses2.png"/>Friends</fieldset>
+<fieldset id="people"><img src="images/user_woman_shades2.png"/>People</fieldset>
+<fieldset id="work"><img src="images/watchman.png"/>Work</fieldset>
+<fieldset id="about"><img src="images/worker.png"/>About..us</fieldset>
+
+<fieldset id="about">About..us</fieldset>
+<fieldset id="about">About..us</fieldset>
+<fieldset id="about">About..us</fieldset>
+<fieldset id="about">About..us</fieldset>
+<fieldset id="about">About..us</fieldset>
+<fieldset id="about">About..us</fieldset>
+<fieldset id="about">About..us</fieldset>
+<fieldset id="about">About..us</fieldset>
+<fieldset id="about">About..us</fieldset>
+<fieldset id="about">About..us</fieldset>
+<fieldset id="about">About..us</fieldset>
+<fieldset id="about">About..us</fieldset>
+<fieldset id="about">About..us</fieldset>
+<fieldset id="about">About..us</fieldset>
+<fieldset id="about">About..us</fieldset>
+<fieldset id="about">About..us</fieldset>
+<fieldset id="about">About..us</fieldset>
+<fieldset id="about">About..us</fieldset>
+<fieldset id="about">About..us</fieldset>
+<fieldset id="about">About..us</fieldset>
+
+
+</fieldset>
+</div>
+<div id='site'>
+<fieldset id='fixedtool' >
+<img src='images/sketch.jpg' height='50px'/></fieldset><br/><br><br>
+<button id='slidebtn' >Slide-It..!!</button>
+<div id='starea' style='margin-left:20px;'>	<div  class="wrap">
+    <br/><br/>
+    
+        
+    <div class="content">
+    	<article class="underline">
+		<div class="post-preview">
+			<a href="basic_markup.html"><img src="http://lorempixel.com/48/48/nightlife/3" alt="title of the image"/></a>
+		</div>
+		<div class="post-content">
+			<h2><a href="basic_markup.html">Post with title, preview, excerpt and date</a></h2>
+			<p>I wish! It's a nickel. Good man. Nixon's pro-war and pro-family. Hey, what kinda party is this? There's no booze and only one hooker.</p>
+			<div class="date"><span>20 mar 2012</span></div>
+		</div>
+		<div class="clear"></div>
+    </article>
+    <article class="underline">
+		<div class="post-preview">
+			<a href="basic_markup.html"><img src="http://lorempixel.com/48/48/nightlife/5" alt="title of the image"/></a>
+		</div>
+		<div class="post-content">
+			<h2><a href="basic_markup.html">Post with title, preview and date</a></h2>
+			<div class="date"><span>20 mar 2012</span></div>
+		</div>
+		<div class="clear"></div>
+    </article><article class="underline">
+			<a href="basic_markup.html"><img src="http://lorempixel.com/268/160/nightlife/4" alt="title of the image"/></a>
+			<h2><a href="basic_markup.html">Post with top banner, title, excerpt and date</a></h2>
+			<p>I wish! It's a nickel. Good man. Nixon's pro-war and pro-family. Hey, what kinda party is this? There's no booze and only one hooker.</p>
+			<div class="date"><span>20 mar 2012</span></div>
+    </article>
+    <article class="underline">
+			<h2><a href="basic_markup.html">Post with title, banner, excerpt and date</a></h2>
+			<a href="basic_markup.html"><img src="http://lorempixel.com/268/160/nightlife/4" alt="title of the image"/></a>
+			<p>I wish! It's a nickel. Good man. Nixon's pro-war and pro-family. Hey, what kinda party is this? There's no booze and only one hooker.</p>
+			<div class="date"><span>20 mar 2012</span></div>
+    </article>
+    <article class="underline">
+			<h2><a href="basic_markup.html">Post with title, excerpt and date</a></h2>
+			<p>I wish! It's a nickel. Good man. Nixon's pro-war and pro-family. Hey, what kinda party is this? There's no booze and only one hooker.</p>
+			<div class="date"><span>20 mar 2012</span></div>
+    </article>
+    <article class="underline">
+			<h2><a href="basic_markup.html">Post with title and date</a></h2>
+			<div class="date"><span>20 mar 2012</span></div>
+    </article>
+	<div class="paginate">
+		<ul>
+			<li><span class="current">1</span></li>
+			<li><a href="#2" class="inactive">2</a></li>
+			<li><a href="#" class="inactive">3</a></li>
+			<li><a href="#">&#62;</a></li>
+			<li><a href="#">&raquo;</a></li>
+		</ul>
+	</div>
+    </div>
+    <footer >
+    	<p align='center'>&copy; SocialNova 2013. Design by <a href="http://socialnova.in" target="_blank">NOvIyA CORP. &trade;</a></p>
+    </footer>
+  </div>
+ </div>	<!--	paragraph margin		 -->
+</div><br><br><br>
+<script type='text/javascript'>
+$('#btn').click(function(){
+$('#fld1').toggleClass('fld1');
+if($('#fld1').hasClass('fld1'))
+$('#fld1').hide('slow');
+else
+$('#fld1').show('slow');
+});
+var j=0;
+$('#slidebtn').click(function(){
+//$('#site').toggleClass('site');
+++j;
+//if(!$('#site').hasClass('site'))
+if(j%2==0)
+{
+$('#pane').css({'z-index': '15'});
+$('#site').animate({'margin-left':'0','margin-right':'0px'},500);
+}
+else{
+
+$('#pane').css({'z-index': '11'});
+$('#site').animate({'margin-left':'245px','margin-right':'-245px'},500);
+}
+});
+
+//			.....Clickng on The Main body part will move the leftpane.....		//
+var temp=0;
+function panemax(){
+$('#pane').css({'z-index':'16'});
+}
+function panemin(){
+$('#pane').css({'z-index':'11'});
+}
+ $('#starea').click(function(){
+//....if closed then animate to open again and then to close
+temp++;
+if(j%2!=0){
+if(
+$('#pane').css({'z-index':'11'}) && temp%2!=0)
+{
+//........FOR Making The LEft-pane OuT......./
+
+$('body #site').animate({'margin-left':'270px','margin-right':'-270px'},500);
+window.setTimeout('panemax()',550);
+$('body #site').animate({'margin-left':'0','margin-right':'0px'},500);
+//window.setTimeout('panemax()',1);
+}
+else{
+//........For Hiding The Left-PaNe ......//
+//window.setTimeout('panemax()',0);
+panemax();
+$('body #site').animate({'margin-left':'275px','margin-right':'-275px'},500);
+
+window.setTimeout('panemin()',450);
+$('body #site').animate({'margin-left':'0','margin-right':'0px'},500);
+
+}
+}
+
+}); 
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+#form
+{
+width:300px;
+height:100px;
+margin:auto auto auto -1px;
+
+
+border: 1px solid rgba(147, 184, 189,0.8);
+	-webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	   -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	        box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	-webkit-box-shadow: 10px;
+}
+.div{
+margin:0px auto auto 10px;
+background-image:url(2_b.jpg);
+background-repeat:no-repeat;
+width:327px;
+}
+
+#outer{
+
+z-index:;
+-webkit-box-shadow: 2px 3px 6px 4px rgba(0, 0, 0, 0.4) inset;
+	   -moz-box-shadow: 2px 3px 6px 4px rgba(0, 0, 0, 0.4) inset;
+				box-shadow: 2px 3px 6px 4px rgba(0, 0, 0, 0.4) inset;
+
+
+}

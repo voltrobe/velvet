@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />  
+  <title>Sign Up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" /> 
+  <link rel="stylesheet" media="all" href="style.css" type="text/css">
+	<style type="text/css">
+.style2 {
+	font-size: medium;
+}
+.style3 {
+	font-size: x-large;
+}
+.style4 {
+	font-family: Tahoma;
+}
+.style5 {
+	font-family: Tahoma;
+	text-decoration: underline;
+
+}
+#load{
+background:center url(images/ajax-loader.gif);
+top:50%;
+left:50%;
+}
+</style>
+</head>
+
+<body>
+
+<br>
+<center>
+	<img alt="" src="images/logo11.png" >
+	
+	</center>
+           
+    <div class="content" id="content">
+    	<article>
+    	<h2 class="underline">Sign Up</h2>
+			<form action="#" method="post" class="label-top">
+			    <div>
+			         <label for="name">Name <span class="red">*</span></label>
+			         <input type="text" name="name" id="name" value="" tabindex="1" required/>
+			    </div>
+			    <div>
+					 <label for="name">Email <span class="red">*</span></label>
+			         <input type="text" name="name" id="name" value="" tabindex="1" required//>
+			    </div>
+
+			    <div>
+			         <label for="email">Password <span class="red">*</span></label>
+			         <input type="password" name="email" id="email" value="" tabindex="1" required//>
+			    </div>
+			    <div>
+			         <label for="email">Retype Password <span class="red">*</span></label>
+			         <input type="password" name="email" id="email" value="" tabindex="1" required//>
+			    </div>
+			    
+			    
+			      
+			    <br>
+				<div>
+				    <span class="style2"><span class="style3">
+				    <input type="submit" value="Register" /></span></span>
+			    </div>
+			    <p class="style5">
+			    <a id='link'  href="login.html">Already had an account! Login Here</a></p>
+			</form>
+    </article>
+
+    </div>
+    <footer align='center'>
+    	<p style='font-family:segoe print;font-size:18px;'>&copy; socialnova 2013. Design by Tousif Sayyed.</p>
+    </footer>
+
+ <script type='text/javascript' src='js.1.9.0.min.js'></script>
+ <script type='text/javascript'>
+
+ $('#link').click(function(e){
+ //$('#content').load($(this).attr('href')+' #content');
+	 $.get($(this).attr('href'),function(data){
+		 $('#content').html(data);
+	 });
+ e.preventDefault();
+ });
+ </script>
+</body>
+</html>

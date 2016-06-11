@@ -1,0 +1,1159 @@
+#coverpic{
+min-width:650px;
+min-height:300px;
+width:100%;
+height:400px;
+display:inline-block;
+border:thick ridge rgba(78, 154, 163, 0.7);
+}
+#profilepic{
+margin-left:65%;
+margin-top:-185px;
+max-width:100%;
+width:160;
+height:180;
+border:thin ridge;
+}
+/*..........................|| Shadow Box ||......................,...*/
+
+#div-shadow-box {
+height:auto;
+width:90%;
+margin:0px 2% 20px 3.5%;
+display:block !important;
+padding:-60px;
+top:0px;
+}
+
+/* ......................image buttons................*/
+
+input.phbutt:hover{
+border:15px ridge rgba(105, 108, 109,  0.7);
+text-shadow:1px 1px 1px rgba(0,0,0,0.2);
+margin-left:5px;
+-webkit-border-radius: 6px 6px  6px 6px;
+	   -moz-border-radius: 6px 6px  6px 6px;
+	        border-radius: 6px 6px  6px 6px;
+border: 1px solid rgba(147, 184, 189,0.8);
+	-webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	   -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	        box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	-webkit-box-shadow: 10px;
+}
+
+/*.................for Styling:none for unordered list/...............*/
+
+
+ul{
+list-style:none;
+}
+
+/*................... Buttons script.........................*/
+
+input.bnova{background-image: url(son.png);
+height:40;
+color: white;
+text-shadow:2px 3px 3px rgba(0,0,0,0.7);
+border: ridge 5px solid #999999;
+font: bold 14px segoe print;
+
+-webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	   -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	        box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	-webkit-box-shadow: 5px;
+	}
+	
+input.bnova:hover{text-shadow:2px 3px 3px rgba(0,0,0,0.7);
+border: ridge 5px solid #999999;
+font: bold 14px segoe print;
+height:40;
+background-image: url(son.png);
+
+border: 2px solid rgba(147, 184, 189,0.8);
+	-webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	   -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	        box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	-webkit-box-shadow: 10px;
+}	
+
+
+
+/*..........................|| BODY ||........................*/
+
+body{
+
+position:relative;
+background-image:url(bg1.png);
+-webkit-font-smoothing: antialiased;
+overflow-x:hidden;
+}
+
+body:after{
+content: "";
+overflow:auto;
+    z-index: -1;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: -webkit-radial-gradient(center center, circle cover, rgba(0,0,0,0), rgba(0,0,0,0.25));
+    background: -moz-radial-gradient(center center, circle cover, rgba(0,0,0,0), rgba(0,0,0,0.25));
+    background: -ms-radial-gradient(center center, circle cover, rgba(0,0,0,0), rgba(0,0,0,0.25));
+    background: -o-radial-gradient(center center, circle cover, rgba(0,0,0,0), rgba(0,0,0,0.25));
+
+}
+
+#topshadowedbox {
+margin:50px auto auto 7%;
+width:85%;
+height:28px;
+text-align:right;
+}
+
+/*........................ header photo groove.....................*/
+
+div.div1{
+background:url(back.png) repeat;
+border:thin ridge lightblue;
+margin:0px -10px auto -10px;
+top:0px;
+float:top;
+height:70px;
+border: 1px solid rgba(147, 184, 189,0.8);
+
+-webkit-box-shadow: 0px 1px 10px 4px rgba(0, 0, 0, 1) inset;
+	   -moz-box-shadow: 0px 1px 10px 4px rgba(0, 0, 0, 0.5) inset;
+	        box-shadow: 0px 1px 10px 4px rgba(0, 0, 0, 0.5) inset;
+
+	-webkit-box-shadow: 5px;
+
+}
+
+
+/* 
+.div1{
+background: url(snovahead.png);
+background-repeat:no-repeat;
+border:thin ridge lightblue;
+margin-left:0px;
+margin-right:0px;
+float:top;
+height:130;
+border: 1px solid rgba(147, 184, 189,0.8);
+background: #d8e6f4;
+display: block;
+  position: relative;
+  height: 130px;
+  line-height: 35px;
+  margin-bottom: 5px;
+  padding: 0 12px;
+  font-size: 14.5px;
+  font-weight: bold;
+  color: #597490;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.8);
+  
+  
+  border: 1px solid rgba(147, 184, 189,0.8);
+	-webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	   -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	        box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	-webkit-box-shadow: 5px;
+  
+  
+  background-clip: padding-box;
+  border: 1px solid;
+  border-color: #b2bcc8 #acb6c0 #97abba;
+  border-radius: 3px;
+  background-image: -webkit-linear-gradient(top, #f1f6ff 0%, #d3dde7 70%, #bfcddc 100%);
+  background-image: -moz-linear-gradient(top, #f1f6ff 0%, #d3dde7 70%, #bfcddc 100%);
+  background-image: -o-linear-gradient(top, #f1f6ff 0%, #d3dde7 70%, #bfcddc 100%);
+  background-image: linear-gradient(to bottom, #f1f6ff 0%, #d3dde7 70%, #bfcddc 100%);
+  -webkit-box-shadow: inset 0 1px white, inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 1px 1px rgba(0, 0, 0, 0.06);
+  box-shadow: inset 0 1px white, inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 1px 1px rgba(0, 0, 0, 0.06);
+
+}
+*/
+body.bdimg{
+background-image:url(snova1.png);
+background-repeat:no-repeat;
+border:thin ridge lightblue;
+height:110;
+border: 1px solid rgba(147, 184, 189,0.8);
+	-webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	   -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	        box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	-webkit-box-shadow: 5px;
+}
+
+fieldset.fld1{
+height:159.5;
+margin:0px 0px auto 0px;
+}
+
+h1.h1{margin-right:5%;
+margin-top:0px;
+
+text-align:center;
+}
+
+font.ft1{
+color:white;
+font-size:48;
+font-family:"segoe script";
+text-shadow: 2px 3px 3px rgba(0,0,0,1);
+}
+
+hr.hr1{margin-right:-20px;
+margin-bottom:2px;
+margin-top:17px;
+width:300px;
+position:left;
+}
+
+hr.hr2{margin-right:-20px;
+margin-top:2px;
+width:300px;
+position:right;
+}
+
+/*............... for header App-name ................ */
+
+fieldset.fldheadapp{
+
+margin-right:-20px;
+margin-top:-15px;
+background-image:url(son.png);
+width:240px;
+height:50px;
+text-align:center;
+margin-left:2%;
+
+border: 1px solid rgba(147, 184, 189,0.8);
+	 background: #d8e6f4;
+  font-family:"segoe print";
+  border-top-color: #8495a0;
+  -webkit-box-shadow: 2px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+	   -moz-box-shadow: 2px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+	        box-shadow: 2px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+			
+	
+}
+
+/*...................|| welcome header||................ */
+
+div.div2{
+background-image:url(sn.png);
+margin-left:5px;
+border:thick ridge lightblue;
+height:50px;
+margin-right:5px;
+margin-top:-13px;
+width:100.25%;
+border: 1px solid rgba(147, 184, 189,0.8);
+	-webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	   -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	        box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	-webkit-box-shadow: 10px;
+	
+}
+.h2{color:white;
+font-size:30;
+text-shadow: 3px -3px 3px rgba(0,0,0,0.5);
+font-family:"segoe print" ;
+line-height:60px;
+margin:20px 5px auto 200px;
+}
+
+/*  .....................menu bar........................ */
+
+.div3{background-image:url(son.png);
+height:50px;
+margin:1px auto;
+border: groove lightblue;
+
+text-align:center;
+text-shadow: 2px 3px 3px rgba(0,0,0,0.7);
+padding:0px;
+border: 1px solid rgba(147, 184, 189,0.8);
+	-webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	   -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	        box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	-webkit-box-shadow: 5px;
+}
+
+.p1{margin-bottom:0px;
+font-family:"segoe print";
+font-size:17px;
+text-align:center;
+
+color:grey;
+}
+
+font.ft2{color:lightblack;
+
+}
+
+
+/*  Page divisions (green) outer one */
+
+div.div4{
+background-image:url("back.png");
+/*.at2x('sonova2.png', auto, auto);*/
+border:thick ridge lightgrey;
+text-shadow: 2px 3px 3px rgba(0,0,0,0.7);
+ margin:-17px -17px -20px -18px !important;
+ width:auto;
+border: 1px solid rgba(147, 184, 189,0.8);
+	-webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	   -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	        box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	-webkit-box-shadow: 10px;
+}
+
+h3.pg{
+	margin-left:190px;
+margin-top:5px;
+margin-bottom:5px;
+	color:white;
+	font-family:"segoe print",;
+	font-size:23px;
+	font-weight:bold;
+}
+
+/*  /......................inline page (white).................  */
+
+div.divpg{background-image:url(images/bg.jpg);
+ border: groove solid lightgray ;
+ width:auto;
+ margin-left:15px;
+ text-shadow:1px 1px 2px rgba(0,0,0,0.1);
+ margin-right:15px;
+ overflow-y: auto;
+ overflow-x:hidden;
+ -webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+	   -moz-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+	        box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+}
+
+
+/*   ............... cover Photo  Div..................       */
+
+div.cphoto{
+background:url(pics/cover/$user.jpg) ;
+border:thick ridge rgba(78, 154, 163, 0.7);
+margin-right:40%;width:75%;
+background-repeat:no-repeat;'
+
+}
+
+/*  error message of seesion pages */
+
+font.ftmsg{font-family:"segoe print";
+color:white;
+font-size:24px;
+}
+
+/* .............................|| division login page ||......................... */
+
+div.login{width:30%;
+border:7px ridge rgba(78, 154, 163,  0.7);
+text-shadow:1px 1px 1px rgba(0,0,0,0.2);
+margin-left:20px;
+
+-webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.5) inset;
+	   -moz-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.5) inset;
+	        box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.5) inset;
+			position: relative;
+			-webkit-border-radius: 4px 4px  4px 4px;
+	   -moz-border-radius: 4px 4px  4px 4px;
+	        border-radius: 4px 4px  4px 4px;
+			
+			}
+
+			
+
+
+
+/*  division signup page  */
+
+
+div.signup
+{
+border:7px ridge rgba(78, 154, 163,  0.7);
+text-shadow:1px 1px 1px rgba(0,0,0,0.2);
+margin-left:20px;
+margin-right:15%;
+overflow-x:auto;
+-webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.5) inset;
+	   -moz-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.5) inset;
+	        box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.5) inset;
+			position: relative;
+			-webkit-border-radius: 4px 4px  4px 4px;
+	   -moz-border-radius: 4px 4px  4px 4px;
+	        border-radius: 4px 4px  4px 4px;
+			
+	}
+
+			
+
+/* ...................|| footer Ads ||...................  */
+
+
+font.ftft{font-family:tekton pro;
+font-size:22px;
+text-shadow:1px 2px 1px rgba(0,0,0,0.3);;
+}
+
+ .footerfont,.xmlwords{
+	font-family:"segoe print";
+	font-size: 30px;
+	line-height: 38px;
+	font-weight: 300;
+	color: #777;
+	/* text-shadow: 0 1.1px 1.1px rgba(255,255,255,0.9); */
+		text-shadow: 0 1px 0px rgba(255,255,255,0.8), 0 -1px 0px rgba(0,0,0,0.8);
+
+}
+.xmlwords{
+	font-size: 18px;
+}
+.errorfont{
+
+font-size: 20px;
+	line-height: 30px;
+	font-family:segoe print;
+	font-weight: 1000;
+	color: #777;
+	text-shadow: 0 1.1px 1.1px rgba(255,255,255,0.9);
+
+}
+
+
+/* .............................|| Sidebar ||.............................. */
+#sin{
+	position:fixed;
+	width:10px;
+	margin:-55px auto !important;
+	height:100%;
+	z-index:2000;
+}
+.sidebar{
+width:20%;
+height:100%;
+position:fixed;
+/* display:none; */
+opacity:1;
+z-index:999;
+margin:-38px auto auto -10px;
+/*border: groove lightblue;*/
+text-shadow: 2px 3px 3px rgba(0,0,0,0.7);
+padding:5px;
+/*border:1px solid rgba(147, 184, 189,0.8);*/
+}
+.innersidebar{
+	height:100% !important;
+	opacity:1;
+	overflow-x:hidden !important;
+	width:100% !important;
+	-webkit-box-shadow: 2px 3px 6px 4px rgba(0, 0, 0, 0.4) inset;
+	-moz-box-shadow: 2px 3px 6px 4px rgba(0, 0, 0, 0.4) inset;
+	box-shadow: 2px 3px 6px 4px rgba(0, 0, 0, 0.4) inset;
+}
+.messengerdiv ,.activitiesdiv{ /* Div contained in Sidebar*/
+	position:relative;
+	width:90%;
+	margin:5px 0px 5px 10px;
+	height:auto;
+	color:white;
+	font-family:"segoe print";
+	background:lightgrey;
+	padding:5px;
+}
+.activitiesdiv{
+	display:none;
+}
+#messenger , #activities , #clos{/* Buttons in sidebar*/
+font-size:15px;
+font-family:roboto;
+height:30px;
+text-align:center;
+width:85px;
+line-height:32px;
+margin:auto -5px auto 5px;
+}
+#clos{
+	width:5px !important;
+}
+/* ..............    Fieldset Graphics......outer and iner one   .............  */ 
+
+fieldset.iner, .divavailable , .notify>.field , .recipavail ,#vtab > ul > li.selected{
+-webkit-box-shadow: 2px 3px 6px 4px rgba(0, 0, 0, 0.4) inset;
+	   -moz-box-shadow: 2px 3px 6px 4px rgba(0, 0, 0, 0.4) inset;
+	        box-shadow: 2px 3px 6px 4px rgba(0, 0, 0, 0.4) inset;
+}
+
+fieldset.outer , #div-messagebox ,#vtab > div ,#vtab > ul > li{
+border: 1px solid rgba(147, 184, 189,0.8);
+	-webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	   -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	        box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	-webkit-box-shadow: 10px;
+}
+
+/*  ................Default BLOCK- Site-Graphics Icon................  */
+
+.defb a , .defbtn a {
+  display: block;
+  text-decoration: none;
+   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.5);
+
+}
+
+.defb  ,::-webkit-scrollbar-thumb {
+   display: block;
+  position: relative;
+  height: 36px;
+  margin-bottom: 10px;
+  padding: 0 14px;
+  line-height: 36px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family:'segoe print';
+  color: #597490;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.8);
+  background: #d8e6f4;
+  background-clip: padding-box;
+  border: 1px solid;
+  border-color: #b2bcc8 #acb6c0 #97abba;
+  border-radius: 3px;
+  background-image: -webkit-linear-gradient(top, #f1f6ff 0%, #d3dde7 70%, #bfcddc 100%);
+  background-image: -moz-linear-gradient(top, #f1f6ff 0%, #d3dde7 70%, #bfcddc 100%);
+  background-image: -o-linear-gradient(top, #f1f6ff 0%, #d3dde7 70%, #bfcddc 100%);
+  background-image: linear-gradient(to bottom, #f1f6ff 0%, #d3dde7 70%, #bfcddc 100%);
+  -webkit-box-shadow: inset 0 1px white, inset 0 0 0 5px rgba(255, 255, 255, 0.25), 0 1px 1px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px white, inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 1px 1px rgba(0, 0, 0, 0.06);
+}
+
+
+.defbtn  ,.fieldavailableusers {
+  
+  position: relative;
+  height: 36px;
+  margin-bottom: 10px;
+  padding: 0 14px;
+  line-height: 36px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family:'segoe print';
+  color: #597490;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.8);
+  background: #d8e6f4;
+  background-clip: padding-box;
+  border: 1px solid;
+  border-color: #b2bcc8 #acb6c0 #97abba;
+  border-radius: 3px;
+  background-image: -webkit-linear-gradient(top, #f1f6ff 0%, #d3dde7 70%, #bfcddc 100%);
+  background-image: -moz-linear-gradient(top, #f1f6ff 0%, #d3dde7 70%, #bfcddc 100%);
+  background-image: -o-linear-gradient(top, #f1f6ff 0%, #d3dde7 70%, #bfcddc 100%);
+  background-image: linear-gradient(to bottom, #f1f6ff 0%, #d3dde7 70%, #bfcddc 100%);
+  -webkit-box-shadow: inset 0 1px white, inset 0 0 0 5px rgba(255, 255, 255, 0.25), 0 1px 1px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px white, inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 1px 1px rgba(0, 0, 0, 0.06);
+}
+
+
+.defb:hover, .defbtn:hover ,::-webkit-scrollbar-thumb:hover{
+   background: #99abb9;
+  border-color: #718190;
+  color:white;
+  color: #f6fdff;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+  background-clip: border-box;
+  background-image: -webkit-linear-gradient(top, #99abb9, #7e93a8);
+  background-image: -moz-linear-gradient(top, #99abb9, #7e93a8);
+  background-image: -o-linear-gradient(top, #99abb9, #7e93a8);
+  background-image: linear-gradient(to bottom, #99abb9, #7e93a8);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.15), 0 1px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.15), 0 1px rgba(255, 255, 255, 0.3);
+
+}
+
+
+.defb:before, .defb:after ,.defbtn:before, .defbtn:after {
+  position: absolute;
+}
+
+.defb:before, .defbtn:before{
+ top: 10px;
+  right: 12px;
+  width: 15px;
+  height: 15px;
+  background: #59718a;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4), 0 1px rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4), 0 1px rgba(255, 255, 255, 0.4);
+
+}
+
+
+.defb:after, .defbtn:after
+{top: 14px;
+  right: 13px;
+  border: 4px solid transparent;
+  border-left: 4px solid #ecf1f7;
+
+}
+
+
+
+.defb.active , .defb:active, .defbtn.active, .defbtn:active , .activebtnstate ,::-webkit-scrollbar-thumb:active{
+  background: #7d91a9;
+   color: #f6fdff;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+  background-clip: border-box;
+  border-color: #708191 #6d8295 #7b8c9e;
+  background-image: -webkit-linear-gradient(top, #7d91a9, #92a7bc);
+  background-image: -moz-linear-gradient(top, #7d91a9, #92a7bc);
+  background-image: -o-linear-gradient(top, #7d91a9, #92a7bc);
+  background-image: linear-gradient(to bottom, #7d91a9, #92a7bc);
+  -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.4);
+} 
+
+.defb .icon {
+  position: relative;
+  width: 40.8px;
+  padding: 0;
+}
+.defb.icon > span {
+  display: block;
+  position: absolute;
+  top: 9px;
+  left: 12px;
+  height: 16px;
+  width: 16px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
+.defb .icon.home > span {
+  background-image: url("/img/home.png");
+}
+.defb .active .icon > span, .defb .icon:active > span {
+  background-position: 0 -16px;
+}
+/*....................................UserDefined BUTTONS............................*/
+.ud1btn {
+background: #7d91a9;
+   color: #f6fdff;
+   height:auto;
+   /*max-width:600px;*/
+   overflow:hidden;
+   font-size:18px;
+   font-family:"segoe print",sans serif !important;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+  background-clip: border-box;
+  border-color: #708191 #6d8295 #7b8c9e;
+  background-image: -webkit-linear-gradient(top, #7d91a9, #92a7bc);
+  background-image: -moz-linear-gradient(top, #7d91a9, #92a7bc);
+  background-image: -o-linear-gradient(top, #7d91a9, #92a7bc);
+  background-image: linear-gradient(to bottom, #7d91a9, #92a7bc);
+  -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.4);
+
+  -webkit-border-radius: 4px 4px  4px 4px;
+	   -moz-border-radius: 4px 4px  4px 4px;
+	        border-radius: 4px 4px  4px 4px;
+  }
+  .txtarea
+  {
+  background: #7d91a9;
+   color: #f6fdff;
+    max-height:500px; 
+   min-height:110px;
+	width:100%;
+	resize:vertical;
+   overflow:auto !important;
+   font-size:18px;
+   font-family:"segoe print",sans serif !important;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+  background-clip: border-box;
+  border-color: #708191 #6d8295 #7b8c9e;
+  background-image: -webkit-linear-gradient(top, #7d91a9, #92a7bc);
+  background-image: -moz-linear-gradient(top, #7d91a9, #92a7bc);
+  background-image: -o-linear-gradient(top, #7d91a9, #92a7bc);
+  background-image: linear-gradient(to bottom, #7d91a9, #92a7bc);
+  -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.4);
+
+  -webkit-border-radius: 3px 20px  3px 20px;
+	-moz-border-radius: 3px 20px  3px 20px;
+	border-radius: 3px 20px  3px 20px;
+  
+  }
+  .txtshw
+  {
+  background: #7d91a9;
+   color: #f6fdff;
+	max-height:1000px ; 
+	width:80% ;
+	height:auto;
+	resize:none ;
+   overflow:hidden;
+   font-size:16px;
+   font-family:"segoe print",sans serif ;
+  -webkit-border-radius: 3px 20px  3px 20px;
+	   -moz-border-radius: 3px 20px  3px 20px;
+	        border-radius: 3px 20px  3px 20px;
+	  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+	  background-clip: border-box;
+	  border-color: #708191 #6d8295 #7b8c9e;
+	  background-image: -webkit-linear-gradient(top, #7d91a9, #92a7bc);
+	  background-image: -moz-linear-gradient(top, #7d91a9, #92a7bc);
+	  background-image: -o-linear-gradient(top, #7d91a9, #92a7bc);
+	  background-image: linear-gradient(to bottom, #7d91a9, #92a7bc);
+	  -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.4);
+	  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.4);
+	  
+  }
+  /* @media all and (max-width:1024px)
+  {
+  .txtarea{
+   height:50px; 
+   width:400px; 
+   overflow-y:auto!important;
+   font-size:18px;
+   font-family:"segoe print",sans serif !important;
+  }
+}
+ */
+.ud2btn {
+  background: #99abb9;
+  border-color: #718190;
+  background-image: -webkit-linear-gradient(top, #99abb9, #7e93a8);
+  background-image: -moz-linear-gradient(top, #99abb9, #7e93a8);
+  background-image: -o-linear-gradient(top, #99abb9, #7e93a8);
+  background-image: linear-gradient(to bottom, #99abb9, #7e93a8);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.15), 0 1px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.15), 0 1px rgba(255, 255, 255, 0.3);
+}
+
+
+
+ .ud3btn{
+  background: #d8e6f4;
+  font-family:"segoe print";
+  text-align:center;
+  padding: 3px;
+  border-top-color: #8495a0;
+  -webkit-box-shadow: 2px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+	   -moz-box-shadow: 2px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+	        box-shadow: 2px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+			-webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.4);
+  -webkit-border-radius: 4px 4px  4px 4px;
+	   -moz-border-radius: 4px 4px  4px 4px;
+	        border-radius: 4px 4px  4px 4px;
+
+ }
+
+
+/* color: #597490; background: #d8e6f4;....................................Inner font style............................... */
+
+.fontiner{
+
+  font-size: 50px;
+  font-weight: bold;
+  font-family:'segoe print';
+  color : rgb(64,128,128);
+  text-decoration: none;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.8);
+  
+  background-clip: padding-box;
+  background: transparent;
+  border: 1px solid;
+  border-color: #b2bcc8 #acb6c0 #97abba;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px white, inset 0 0 0 5px rgba(255, 255, 255, 0.25), 0 1px 1px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px white, inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 1px 1px rgba(0, 0, 0, 0.06);
+
+}
+
+
+
+/*.........................password Strength............................*/
+
+
+
+#passwordStrength
+{
+	height:10px;
+	display:block;
+	float:left;
+}
+
+.strength0
+{
+	width:250px;
+	background:#cccccc;
+}
+
+.strength1
+{
+	width:50px;
+	background:#ff0000;
+}
+
+.strength2
+{
+	width:100px;	
+	background:#ff5f5f;
+}
+
+.strength3
+{
+	width:150px;
+	background:#56e500;
+}
+
+.strength4
+{
+	background:#4dcd00;
+	width:200px;
+}
+
+.strength5
+{
+	background:#399800;
+	width:250px;
+}
+
+/* 			Sharebox in members(HOME PAGE)		*/
+#sharebox[rel=share]{
+	display:block;
+	width:450px;
+	height:150px;
+}
+#sharepix{	/* File attaching button*/
+	
+}
+#sharebox , .divavailableusers , .notify{
+		-webkit-box-shadow: 0px 15px 10px -10px rgba(0, 0, 0, 0.5), 0px 1px 4px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
+		-moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.8) inset;
+		box-shadow: 20px 20px 20px -15px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.3) inset;
+		/* box-shadow: z-index, sd-length, darkness ,extension-to-right; */
+}
+
+/*			slide panel in message box-shadow		*/
+.divavailableusers {
+	height:350px;
+	overflow-y:auto;
+	width:5px;
+	z-index:999;
+	position:absolute;
+	margin-left:-2px;
+	background:url(images/linen.jpg);
+}
+.divinneruser{
+	overflow-x:hidden;
+	position:absolute;
+	width:100%;
+}
+.divavailableusers1  {
+	overflow-y:auto;
+	height:350px;
+	opacity:0.8;
+	z-index:999;
+	width:5px;
+	padding-right:15px;
+	background:url(images/linen.jpg);
+	z-index:999;
+}
+.divavailableusers1:hover{
+	z-index:999;
+	padding-right:15px;
+	opacity:1;
+	overflow-y:scroll;
+}
+.divavailable{		/*  The  inner Shaded Div inside divavailableusers framing the fieldset */
+	padding-right:15px;
+	margin:5px -5px auto 8.5px;
+}
+
+.fieldavailableusers{
+	color:black;
+	display:block;
+	width:100%;
+	margin:0px auto 0px auto;
+	height:30px;
+	font-family:"segoe print";
+	line-height:15px;
+}
+.fieldavailableusers:hover {
+	background:url(back.png);
+	color:white;
+	display:block;
+}
+.fieldavailableusersactive{
+	background:url(stt.png);
+	color:lightgrey;
+	display:block;
+}
+.fieldavailableusers img{
+text-align:left;
+margin:-3px auto auto -10px;
+width:31px;
+ height:30px;
+}
+.fieldavailableusers small{
+font-size:12px;
+line-height:25px;
+}
+#slidebtn{
+	float:left;
+	font-size:12px;
+	height:35px;
+	width:50px;
+	margin:auto 0px;
+	background:url(images/slick_image/hdpi/unselected/classmates2.png);
+	line-height:-20px;
+}
+
+#slidebtn:hover{
+	background:url(images/slick_image/hdpi/selected/classmates2.png);
+}
+#txtimg{
+	margin-left:-30px;
+	width:25px;
+	height:auto;
+}
+.notify {
+	width:240px;
+	height:130px;
+	top:20%;
+	display:none;
+	left:75%;
+	z-index:800;
+	background:url('bg1.png');
+	position:fixed;
+	-webkit-border-radius: 3px 20px  3px 20px;
+	-moz-border-radius: 3px 20px  3px 20px;
+	border-radius: 3px 20px  3px 20px;
+}
+.notify button{
+	width:20px;
+	height:25px;
+	float:right;
+	font-size:12px;
+	margin:0px auto;
+}
+.notify .txtshw{
+	width:150px !important;
+	max-width:150px;
+	height:70px;
+	float:center;
+	margin-top:40px;
+	margin-left:4px;
+	font-size:13px;
+}
+.notify img{
+	width:60px;
+	height:55px;
+	float:right;
+	margin-top:-58px;
+	-webkit-border-radius: 3px 20px  3px 20px;
+	-moz-border-radius: 3px 20px  3px 20px;
+	border-radius: 3px 20px  3px 20px;
+}
+.notify b{
+	font-size:13px;
+	float:left;
+	margin:10px auto auto 5px;
+}
+.notify small{
+	font-size:10px;
+	float:right;
+	margin:-100px auto auto -30px;
+	color:black;
+}
+.fontdarkcarve{
+	font-size: 70px;
+	font-weight: bold;
+	font-family:'segoe print';
+	/* color : #555; */
+	text-decoration: none;
+	color: white;
+	text-shadow: 0 1px 0px rgba(255,255,255,0.8), 0 -1px 0px rgba(0,0,0,0.8);
+	position:absolute;
+	top:60%;
+	left:50%;
+}
+/*
+.boxfloat{
+	position: fixed;
+    left       : 15%;
+    right      : 15%;
+	z-index:2010 !important;
+     
+	margin: 75px auto;
+}
+*/
+.boxfloat{
+	position: fixed;
+	left       : 42%;
+	right      : 0%;
+	width:650px;
+	z-index: 2010 !important;
+	overflow   : auto;
+	text-align:right;
+	margin:0px auto !important; 
+}
+#floatingbar  {
+	width:500px;
+	height:40px !important;
+	margin: 0 auto;
+	padding:1em;
+	text-align : -webkit-center !important;
+	margin:25px auto !important;
+	background:url(son.png);
+	-webkit-border-radius:100px 3px 3px 3px;
+	-webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+#iconbtn{
+	height:10px !important;
+	font-family:roboto !important;
+	font-size:20px;
+}
+#imgfloat{
+	margin:1px auto auto -20px ;
+	border: white groove;
+}
+#sharetxtarea{ /* textarea in shareForm*/
+	font-family:segoe print;
+	resize:none;
+	min-height:40px !important;
+	overflow-y:hidden;
+	-webkit-border-radius: 3px 20px  3px 20px;
+	-moz-border-radius: 3px 20px  3px 20px;
+	border-radius: 3px 20px  3px 20px;
+}
+#txtslidy{			/* Fieldset in shareForm*/
+	font-family:segoe print;
+	overflow-y:hidden;
+	-webkit-border-radius: 3px 40px  3px 20px;
+	-moz-border-radius: 3px 40px  3px 20px;
+	border-radius: 3px 40px  3px 20px;
+}
+div[rel=div4]{
+	height:auto;
+	width:90%;
+	margin:0px 50px 20px 50px;padding:-60px;
+	top:0px;
+}
+.shareboxstyle , .innersidebar{
+	bottom:0px;
+	position: relative;
+	color: rgb(127, 124, 124);
+	left: 0px;
+	height: 150px;
+	width: 440px;
+	padding:5px 10px 5px 10px;
+	font-size: 16px	;
+	text-align: left;
+	border-top: 1px solid rgb(219, 229, 232);
+	-webkit-border-radius: 0 0  5px 5px;
+	   -moz-border-radius: 0 0  5px 5px;
+	        border-radius: 0 0  5px 5px;
+	background: rgb(225, 234, 235);
+	background: -moz-repeating-linear-gradient(-45deg, 
+	rgb(247, 247, 247) , 
+	rgb(247, 247, 247) 15px, 
+	rgb(225, 234, 235) 15px, 
+	rgb(225, 234, 235) 30px, 
+	rgb(247, 247, 247) 30px
+	);
+	background: -webkit-repeating-linear-gradient(-45deg, 
+	rgb(247, 247, 247) , 
+	rgb(247, 247, 247) 15px, 
+	rgb(225, 234, 235) 15px, 
+	rgb(225, 234, 235) 30px, 
+	rgb(247, 247, 247) 30px
+	);
+	background: -o-repeating-linear-gradient(-45deg, 
+	rgb(247, 247, 247) , 
+	rgb(247, 247, 247) 15px, 
+	rgb(225, 234, 235) 15px, 
+	rgb(225, 234, 235) 30px, 
+	rgb(247, 247, 247) 30px
+	);
+	background: repeating-linear-gradient(-45deg, 
+	rgb(247, 247, 247) , 
+	rgb(247, 247, 247) 15px, 
+	rgb(225, 234, 235) 15px, 
+	rgb(225, 234, 235) 30px, 
+	rgb(247, 247, 247) 30px
+	);
+}
+#div-messagebox{
+	min-width:250px;
+	/*width:300px;*/
+	height:380px;
+	position:relative;
+	background:url(images/linen.jpg);
+	
+}
+.recipavail{
+	padding:5px;
+	height:200px;
+	overflow-y:auto;
+}
+div::-webkit-scrollbar{
+width:12px;
+}
+div::-moz-scrollbar{
+width:12px;
+}
+div::-o-scrollbar{
+width:12px;
+}
+div::scrollbar{
+width:12px;
+}
+::-moz-scrollbar{
+width:20px;
+margin:auto 5px auto 5px;
+}
+::-webkit-scrollbar{
+width:20px;
+margin:auto 5px auto 5px;
+}
+::-o-scrollbar{
+width:20px;
+margin:auto 5px auto 5px;
+}
+::scrollbar{
+width:20px;
+margin:auto 5px auto 5px;
+}
+::-webkit-scrollbar-track{-webkit-box-shadow: 0pt 1px 5px rgba(0, 0, 0,  0.3),	0px 0px 8px 5px rgba(0, 0, 0, 0.2) inset;
+border-radius:10px;
+width:22px;
+}
+::-moz-scrollbar-track{-webkit-box-shadow: 0pt 1px 5px rgba(0, 0, 0,  0.3),	0px 0px 8px 5px rgba(0, 0, 0, 0.2) inset;
+border-radius:10px;
+width:22px;
+}
+:::-o-scrollbar-track{-webkit-box-shadow: 0pt 1px 5px rgba(0, 0, 0,  0.3),	0px 0px 8px 5px rgba(0, 0, 0, 0.2) inset;
+border-radius:10px;
+width:22px;
+}
+:::scrollbar-track{
+width:22px;
+
+}

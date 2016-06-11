@@ -1,0 +1,52 @@
+if ($pwd === PwdHash($pass,substr($pwd,0,9)))
+         { 
+            if(empty($err))
+            {            
+                 // this sets session and logs user in  
+                   session_regenerate_id (true); //prevent session fixation attacks.
+                //set flag for comments box to be displayed used on another page
+                                    // this sets variables in the session 
+                $_SESSION['comments'] = 1;
+                   $_SESSION['user_id']= $id;  
+                $_SESSION['user_name'] = $full_name;
+                $_SESSION['user_level'] = $user_level;
+        $_SESSION['HTTP_USER_AGENT'] = md5($_SERVER['HTTP_USER_AGENT']);
+                //update the timestamp and key for cookie
+                $stamp = time();
+                $ckey = GenKey();
+                mysql_query("update users set ctime='$stamp', ckey = '$ckey' where id='$id'") or die(mysql_error());
+                //set a cookie 
+                  if(isset($_POST['remember']))
+                  {
+                      setcookie("user_id", $_SESSION['user_id'], time()+60*60*24*COOKIE_TIME_OUT, "/");
+                      setcookie("user_key", sha1($ckey), time()+60*60*24*COOKIE_TIME_OUT, "/");
+                      setcookie("user_name",$_SESSION['user_name'], time()+60*60*24*COOKIE_TIME_OUT, "/");
+                      setcookie("pwd",$pass,time()+60*60*24*COOKIE_TIME_OUT, "/");
+                    if(isset($_COOKIE['date']))
+                        {
+                             $old_date = $_COOKIE['date'];
+                         }
+                    else
+                       {
+                            $old_date = date("d/m/y : H:i:s", time()); 
+                        }
+                    
+                     $date  = date("d/m/y : H:i:s", time());
+                      /* reset the date in the cookie to today */
+                     setcookie("date", $date, time() + 365 * 86400);                
+                  }
+                 $err[] = "You have been successfully logged in";
+            }
+       }
+     else
+       {
+            $err[] = "Invalid Login. Please try again with correct password.";
+            //header("Location: login.php?msg=$msg");
+        }
+ } 
+else
+ {
+    $err[] = "Error - Invalid login. No such user exists";
+ }        
+}
+?>  

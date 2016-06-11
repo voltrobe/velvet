@@ -1,0 +1,36 @@
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a[10][10],i,j,k,n,e,u,v;
+	printf("Enter The No of Vertices\n");
+	scanf("%d",&n);
+	printf("Enter The No of Edges\n");
+	scanf("%d",&e);
+	for(i=1;i<=n;i++)
+		for(j=1;j<=n;j++)
+			a[i][j]=0;
+	printf("Enter the Edge\n");
+	for(i=1;i<=e;i++)
+	{
+		scanf("%d%d",&u,&v);
+		a[u][v]=1;
+	}
+	for(k=1;k<=n;k++)
+		for(i=1;i<=n;i++)
+			for(j=1;j<=n;j++)
+				a[i][j]=a[i][j]||(a[i][k] && a[k][j]);
+	printf("transitive Closure\n");
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=n;j++)
+			printf("%d\t",a[i][j]);
+		printf("\n");
+	}
+getch();
+}
+
+
+
+

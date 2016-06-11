@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>PROGRAM SUBMITTION FORM</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+  <section class="container">
+    <div class="login">
+      <h1>Uploading Lab Programs</h1>
+ <form method="post" id='form' action="process.php">
+
+        <p><select name="lab"><option value="ada">ADA</option>
+<option value="mp" >MICROPROCESSOR</option>
+</select><input style='margin-left:70px;' type="reset" Value="Clear Fields"/>
+</p>
+<p><input type="text" name="name" value="" placeholder="Enter Program Name"></p>
+<p><textarea name="pgm" value="" placeholder="Enter The Program Here!!"></textarea></p>
+       <span class='result'></span>
+        <p class="submit"> <input type="submit" name="commit" value="Submit"></p>
+    </div>
+  </section>
+</form>
+<script type='text/javascript' src='../js/jquery.min.js'></script>
+<script>
+$('#form').submit(function(e){
+$.post('process.php ',function(){
+});
+e.preventDefault();
+});
+
+$( "#form" ).on( "submit", function( event ) {
+  event.preventDefault();
+  $.ajax({
+                type: 'post',
+                url: 'process.php',
+                data: $(this).serialize(),
+                success: function (data){
+                 if(data==1)
+       $( ".result" ).html(" <b style='color:green;'>Form posted successfully</b>");
+	else
+       $( ".result" ).html(" <b style='color:red;'>oOps..Form Didn't posted properly</b>");
+                }
+            });
+	
+});
+</script>
+</body>
+</html>

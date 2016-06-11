@@ -1,0 +1,11 @@
+/* CONTENT */
+	#content { padding:15px 0 0 0; width:850px; margin:0 auto;  border-bottom:1px #CCCCCC solid; background:url(../images/new/login_bg.jpg) repeat-x bottom; min-height:288px;}
+	#content_internal { padding:15px 0 0 0; width:850px; margin:0 auto;}
+	.content_block h1 { font-size:24px;}
+	.content_block strong { font-size:18px;}
+	.content_block { font-size:13px;}
+	.content_block ul { margin-left:0px; padding-left:17px; line-height:160%;}
+	.content_block a {color:#528C2F;}
+	.content_block a:visited {color:#528C2F;}
+	.content_block a:hover { text-decoration:none;}
+	.content_block h2 { font-size:22px; color:#333; }

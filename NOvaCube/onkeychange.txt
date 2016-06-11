@@ -1,0 +1,91 @@
+			html.....................
+
+	TYPE TYPE TYPE!</br>
+
+<textarea rows="1" style="height:1em;" id="text1">sadfa daf</textarea>
+<textarea rows="1" style="height:1em;" id="text2">sadfa daf</textarea>
+
+
+			js.......................
+
+
+/* JS */
+document.getElementById("text1").onkeypress = resizeTextarea;
+document.getElementById("text2").onkeyup = resizeTextarea;
+
+/* BIND TO TEXTAREA ELEMENTS */
+var text = document.getElementsByTagName("textarea");
+for(var x = 0; x < text.length; x++)
+    text[x].onkeyup = resizeTextarea;
+
+/* resize function */
+function resizeTextarea(){
+    this.style.height = 'auto';
+    this.style.height = this.scrollHeight + 'px';
+}
+
+
+				Method -II , click to change
+
+
+..................................html
+
+
+<textarea rows="1" style="height:1em;" id="text1">sadfa daf</textarea>
+<textarea rows="1" style="height:1em;" id="text2" onkeypress="loadTArea(['text1','text2']);">sadfa daf</textarea>
+<button onclick="loadTArea(['text1','text2']);">load text area</button>
+
+
+
+
+..................................js
+
+
+var observe;
+if (window.attachEvent) {
+    observe = function (element, event, handler) {
+        element.attachEvent('on' + event, handler);
+    };
+} else {
+    observe = function (element, event, handler) {
+        element.addEventListener(event, handler, false);
+    };
+}
+
+function loadTArea(ids) {
+    for (var i = 0; i < ids.length; i++) {
+        var text = document.getElementById(ids[i]);
+
+        function resize(el) {
+            el.style.height = 'auto';
+            el.style.height = text.scrollHeight + 'px';
+        }
+        /* 0-timeout to get the already changed text */
+        function delayedResize() {
+            window.setTimeout(resize, 0);
+        }
+        observe(text, 'change', resize);
+        observe(text, 'cut', delayedResize);
+        observe(text, 'paste', delayedResize);
+        observe(text, 'drop', delayedResize);
+        observe(text, 'keydown', delayedResize);
+        text.focus();
+        text.select();
+        resize(text);
+    }
+
+}
+
+
+....................................css
+
+
+
+textarea {
+    border : 1 black;
+    overflow: hidden;
+    padding: 0;
+    outline: none;
+    background-color: yellow;
+    resize: none;
+}

@@ -1,0 +1,12 @@
+<input type="button" onclick="myFunction()" value="Submit form">
+</form>
+
+<script>
+function myFunction()
+{
+document.getElementById("myForm").submit();
+}
+</script>
+
+</body>
+</html>

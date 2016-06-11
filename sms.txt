@@ -1,0 +1,35 @@
+<?php
+
+    // include the twilio php help library
+    require "Services/Twilio.php";
+
+    // Setup your credentials
+    $account_sid = "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+    $auth_token = "YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY";
+
+    // Step 3: instantiate a new Twilio Rest Client
+    $client = new Services_Twilio($account_sid, $auth_token);
+
+    // the number that the sms will come from 
+    $from_number = "+1234343434";
+
+    // the number that will receive the sms
+    $to_number = "+1234343434";
+
+    // this is the sms that will be sent
+    $sms_body = "Hey there :) here is an SMS";
+
+    // boom, send the sms message
+    $client->account->sms_messages->create(
+
+        // who is the sms coming from
+        $from_number, 
+
+        // the number that is receiving the sms
+        $to_number,
+
+        // the sms body
+        $sms_body
+    );
+
+?>

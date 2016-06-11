@@ -1,0 +1,3 @@
+		if($name=="" || $lname=="" || $email=="" || $password=="" || $dob==""){
+			$tt = "<div class=error>Some fields were left empty. All fields are mandatory. Try again</div>";
+		} else {

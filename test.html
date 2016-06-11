@@ -1,0 +1,70 @@
+<html>
+<head>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+<style>
+.hide{
+display:none;
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function(){
+//.......................MEthod -I.........//
+var j=0;
+var text= document.getElementById('text').value;
+var txtarea= document.getElementById('text').value;
+$('#button1').click(function(){
+if((j%2)==0){
+//$('#text').value=text;
+$('#textarea').slideDown('slow');
+$('#text').slideUp('slow');
+++j;}
+else{
+
+//$('#textarea').value=txtarea;
+
+$('#text').slideDown('slow');
+$('#textarea').slideUp('slow');
+++j;
+}
+});
+//.......................Method-II.........//
+$('#chk').click(function(){
+var check = $(this).attr('checked');
+if(check=='checked'){
+$('#text').slideUp('slow');
+$('#textarea').slideDown('slow').show();
+}
+else{
+$('#textarea').slideUp('slow');
+$('#text').slideDown('slow').show();
+
+}
+});
+});
+</script>
+<form method="post" action='#'>
+Check to submit after Pressing Enter...!!
+<br/>or Else It will be used for newline<br/>
+<input id='chk' value='1' type='checkbox' checked='checked' /><br/>
+<input id='button1' value='HitEnter'  type='button'  /><br/>
+<!-- <input id='button2' value='NewLine' type='button'  /><br/> -->
+
+<div id='textarea' class='hide'>
+<textarea placeholder='This is an textarea..!!' cols='42' rows='3' ></textarea>
+<input type='submit' value='submit'>
+</div>
+<div id='text' >
+<input type='text' style='width:370px;height:50px;' placeholder='Walhabibe..!!Its just a text field' />
+</div>
+wecbwekcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc cccccccccc
+edddddddddddddddddddddddddddddddddddddddddddddd
+ffffffffffffffffffffffffffffffffffffffffffff
+wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddsssssssssssssssss
+</form>
+
+</body>
+</html>
